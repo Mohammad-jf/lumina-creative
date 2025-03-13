@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
+import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Lumina",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
