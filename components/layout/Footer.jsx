@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-flex">
         <Image src="/images/logo.png" width={130} height={35} />
-        <div className="contact">
+        <div>
           <h4>Contact Us</h4>
           <ul>
             <li>(555) 555-5555</li>
@@ -20,7 +20,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="social">
+        <div>
           <h4>Follow us</h4>
           <Link href="#">
             <FaFacebookF size={30} />

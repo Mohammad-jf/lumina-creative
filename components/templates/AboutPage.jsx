@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import HeroSection from "../modules/HeroSection";
+import ServicesSection from "../modules/ServicesSection";
+import TeamSection from "../modules/TeamSection";
 
 const AboutPage = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <HeroSection
+        span1="Inspired"
+        span2="ingenuity"
+        maintext="minds, shaping exeptional projects fueled by"
+      />
+      <ServicesSection />
+      <TeamSection />
+    </>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

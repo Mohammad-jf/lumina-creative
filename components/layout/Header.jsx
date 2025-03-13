@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathName = usePathname();
+
   return (
     <header className="header">
       <div className="container container-sm header-flex">
@@ -14,15 +18,25 @@ const Header = () => {
         />
         <ul className="main-menu">
           <li>
-            <Link className="current" href="/">
+            <Link className={pathName == "/" ? "current" : ""} href="/">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link
+              className={pathName == "/about" ? "current" : ""}
+              href="/about"
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link
+              className={pathName == "/contactus" ? "current" : ""}
+              href="/contactus"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
