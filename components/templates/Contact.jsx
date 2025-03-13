@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../modules/HeroSection";
+import ContactSection from "../modules/ContactSection";
 
 const Contact = () => {
   return (
@@ -10,6 +11,7 @@ const Contact = () => {
         maintext="thinkers, creating unique endeavors powered by "
         dark={true}
       />
+      <ContactSection />
     </>
   );
 };
