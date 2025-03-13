@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const TeamSection = () => {
   return (
@@ -9,19 +8,34 @@ const TeamSection = () => {
 
         <div className="team-flex">
           <div className="team-item">
-            <Image src={"/images/team1.jpg"} height={200} width={300} />
+            <Image
+              src={"/images/team1.jpg"}
+              height={200}
+              width={300}
+              alt="kevin"
+            />
             <h4>Kevin Samson</h4>
             <p>Founder</p>
           </div>
 
           <div className="team-item">
-            <Image src={"/images/team2.jpg"} height={200} width={300} />
+            <Image
+              src={"/images/team2.jpg"}
+              height={200}
+              width={300}
+              alt="rebecca"
+            />
             <h4>Rebecca Williams</h4>
             <p>Designer</p>
           </div>
 
           <div className="team-item">
-            <Image src={"/images/team3.jpg"} height={200} width={300} />
+            <Image
+              src={"/images/team3.jpg"}
+              height={200}
+              width={300}
+              alt="ben"
+            />
             <h4>Ben Markson</h4>
             <p>Designer/Developer</p>
           </div>

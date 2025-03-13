@@ -1,4 +1,3 @@
-import React from "react";
 
 const Hero = ({ span1, span2, maintext, dark }) => {
   return (

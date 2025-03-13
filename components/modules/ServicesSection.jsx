@@ -1,5 +1,4 @@
 import { services } from "@/constant/services";
-import React from "react";
 
 const Services = () => {
   return (
@@ -8,8 +7,8 @@ const Services = () => {
         <h2 className="section-heading">Our Services</h2>
 
         <div className="services-flex">
-          {services.map((service) => (
-            <div className="service-item">
+          {services.map((service, index) => (
+            <div className="service-item" key={index}>
               <h4>{service.title}</h4>
               <p>{service.desc}</p>
             </div>
